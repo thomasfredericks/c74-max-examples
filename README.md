@@ -1,4 +1,6 @@
-tof-c74max
+Max(ae)mples
 ==========
 
-Tof stuff for Cycling 74's Max
+English : Examples for Cycling 74 Max
+
+Français : Exemples pour Cycling 74 Max
