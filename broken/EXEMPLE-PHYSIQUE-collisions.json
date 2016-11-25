@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u722000554",
+		"name" : "u138004300",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -29,7 +29,7 @@
 					"tof.gl.context::gamepad::device" : [ "Generic   USB  Joystick  " ],
 					"tof.output~[3]::gain" : [ -12.0 ],
 					"tof.output~[3]::state" : [ 1 ],
-					"tof.output~[3]::output" : [ "Soundflower (2ch)" ],
+					"tof.output~[3]::output" : [ "Speakers (Realtek High Definiti" ],
 					"tof.pattrstorage::auto_save" : [ 1 ]
 				}
 
