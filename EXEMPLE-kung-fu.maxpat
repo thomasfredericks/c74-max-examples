@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 474.0, 119.0, 880.0, 705.0 ],
+		"rect" : [ 535.0, 126.0, 880.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,28 +37,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 173.0, 381.0, 80.0, 60.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 27.0, 245.0, 80.0, 60.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
@@ -160,10 +138,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "tof.jit.movement.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 173.0, 280.0, 161.5, 80.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 143.0, 245.0, 264.5, 85.0 ],
 					"varname" : "tof.jit.movement",
 					"viewvisibility" : 1
 				}
@@ -199,7 +177,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 115.0, 166.0, 195.0, 60.0 ],
+					"patching_rect" : [ 115.0, 154.0, 245.0, 70.0 ],
 					"varname" : "tof.jit.grab",
 					"viewvisibility" : 1
 				}
@@ -398,25 +376,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
@@ -575,15 +535,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -593,21 +544,21 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-3::obj-22" : [ "Mute", "Mute", 0 ],
 			"obj-3::obj-56" : [ "OutputChannel", "OutputChannel", 0 ],
 			"obj-3::obj-52" : [ "Level", "Level", 0 ],
-			"obj-3::obj-55" : [ "DSP", "DSP", 0 ],
-			"obj-3::obj-22" : [ "Mute", "Mute", 0 ]
+			"obj-3::obj-55" : [ "DSP", "DSP", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "tof.jit.grab.maxpat",
-				"bootpath" : "~/OneDrive/Max/wip",
+				"bootpath" : "~/OneDrive/Max 7/Library/maxaemples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tof.jit.movement.maxpat",
-				"bootpath" : "~/Desktop/New folder",
+				"bootpath" : "~/OneDrive/Max 7/Library/maxaemples",
 				"type" : "JSON",
 				"implicit" : 1
 			}

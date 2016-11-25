@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 880.0, 759.0 ],
+		"rect" : [ 42.0, 85.0, 880.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,55 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 109.0, 371.0, 220.0, 34.0 ],
+					"style" : "",
+					"text" : "Ajoute le mot «read» devant le nom de la vidéo."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.0, 524.0, 220.0, 20.0 ],
+					"style" : "",
+					"text" : "Ceci est une boîte à messages."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.0, 283.0, 220.0, 20.0 ],
+					"style" : "",
+					"text" : "Envoie ce qu'il reçoit à «receive read»."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 385.0, 184.0, 220.0, 20.0 ],
+					"style" : "",
+					"text" : "Envoie un bang au démarrage."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,7 +100,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6.0, 199.0, 205.0 ],
+					"patching_rect" : [ 17.0, 12.0, 199.0, 205.0 ],
 					"varname" : "tof.#jit.world",
 					"viewvisibility" : 1
 				}
@@ -623,7 +672,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "tof.jit.world#.maxpat",
-				"bootpath" : "~/Desktop/New folder",
+				"bootpath" : "~/OneDrive/Max 7/Library/maxaemples",
 				"type" : "JSON",
 				"implicit" : 1
 			}

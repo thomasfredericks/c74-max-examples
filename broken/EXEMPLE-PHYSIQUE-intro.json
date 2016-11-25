@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u188002353",
+		"name" : "u360000393",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -13,8 +13,8 @@
 					"tof.phys.context::fsmenubar" : [ 0 ],
 					"tof.phys.context::worldbox" : [ 1 ],
 					"tof.phys.context::worldbox_scale" : [ 1.0, 1.0, 1.0 ],
-					"tof.phys.context::gravity" : [ 0.0, 0.0, 0.0 ],
 					"tof.phys.context::picker.dynamics" : [ 1 ],
+					"tof.phys.context::gravity" : [ 0.0, 0.0, 0.0 ],
 					"tof.gl.context::fps" : [ 60.0 ],
 					"tof.gl.context::active" : [ 1 ],
 					"tof.gl.context::antialias" : [ 1 ],
@@ -28,6 +28,8 @@
 					"tof.gl.context::fsmenubar" : [ 0 ],
 					"tof.gl.context::gamepad::device" : [ "Generic   USB  Joystick  " ],
 					"tof.output~[3]::gain" : [ -12.0 ],
+					"tof.output~[3]::state" : [ 1 ],
+					"tof.output~[3]::output" : [ "Speakers (Realtek High Definiti" ],
 					"tof.pattrstorage::auto_save" : [ 1 ]
 				}
 
