@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 880.0, 750.0 ],
+		"rect" : [ 42.0, 85.0, 574.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.0, 184.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-18",
 					"linecount" : 2,
@@ -87,27 +100,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-3",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "tof.jit.world#.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 12.0, 199.0, 205.0 ],
-					"varname" : "tof.#jit.world",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -140,7 +132,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 249.0, 524.0, 133.0, 22.0 ],
 					"style" : "",
-					"text" : "droite.mov"
+					"text" : "apparition.mov"
 				}
 
 			}
@@ -407,9 +399,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 17.0, 620.0, 190.0, 22.0 ],
+					"patching_rect" : [ 17.0, 620.0, 167.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.videoplane @scale 1.333 1 1"
+					"text" : "jit.gl.videoplane @scale 1 1 1"
 				}
 
 			}
@@ -670,13 +662,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "tof.jit.world#.maxpat",
-				"bootpath" : "~/OneDrive/Max 7/Library/maxaemples",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
