@@ -603,8 +603,8 @@
  ],
 		"parameters" : 		{
 			"obj-26::obj-55" : [ "DSP", "DSP", 0 ],
-			"obj-26::obj-22" : [ "Mute", "Mute", 0 ],
 			"obj-26::obj-52" : [ "Level", "Level", 0 ],
+			"obj-26::obj-22" : [ "Mute", "Mute", 0 ],
 			"obj-26::obj-56" : [ "OutputChannel", "OutputChannel", 0 ]
 		}
 ,
