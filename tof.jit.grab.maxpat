@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 650.0, 292.0, 195.0, 60.0 ],
+		"rect" : [ 841.0, 187.0, 245.0, 71.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -128,7 +128,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 80.0, 40.0, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -233,9 +233,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 56.5, 225.0, 124.0, 22.0 ],
+					"patching_rect" : [ 56.5, 225.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.grab @unique 1 @"
+					"text" : "jit.grab"
 				}
 
 			}
