@@ -1,0 +1,34 @@
+<jittershader name="tof.freenect.cloud2">		<description>		This shader processes the depth map of the jit.freenect.grab external and outputs 	x,y,z vertex coordinates for use with jit.gl.mesh and others. It expects 	jit.freenect.grab to output in mode 2.  		It does not correct the perspective.		Based on a shader by Dieter Vandoren (http://dietervandoren.net).
+	Based on the math at http://openkinect.org/wiki/Imaging_Information.		</description>
+	
+				<param name="scaleFactor" type="float" default="1" />
+    <param name="maxDistance" type="float" default="5." />
+	<param name="dim" type="vec2" default="64. 48." />	<param name="tex0" type="float" default="0." />	<language name="glsl" version="1.0">
+					<bind param="scaleFactor" program="fp" />
+         <bind param="maxDistance" program="fp" />
+        				<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />		<program name="fp" type="fragment">		<![CDATA[
+//the essential stuff	uniform sampler2DRect tex0;
+	varying vec2 texcoord0;
+	varying vec2 texdim0;	//our special stuff	uniform float minDistance;	uniform float scaleFactor;
+	uniform float maxDistance;	//uniform vec2 dim;
+
+	 
+	 
+void main(){   			//float z = 0.1236*tan(texture2DRect(tex0, texcoord0).r/2842.5+1.1863);
+	//1.-in[0])*.720140721
+	float z = 0.1236*tan((1.-(texture2DRect(tex0, texcoord0).r))*.720140721+1.1863);
+
+       if ( z <= 0. || z > maxDistance ) {
+       	z = maxDistance;
+       }
+     
+       	gl_FragColor.w = ((((texcoord0.x)/(texdim0.x))*2.)-1.)*scaleFactor;	 gl_FragColor.x = ((((texcoord0.y)/(texdim0.y))*2.)-1.)*scaleFactor*-1.;
+
+      // undistorted version
+	  //gl_FragColor.w = ((((texcoord0.x)/(texdim0.x))*2.)-1.)*(z-minDistance)*scaleFactor;	  //gl_FragColor.x = ((((texcoord0.y)/(texdim0.y))*2.)-1.)*(z-minDistance)*scaleFactor*-1.;
+	  // also add the following to the header
+	  // <param name="minDistance" type="float" default="-0.024" />
+	  //  <bind param="minDistance" program="fp" />
+
+	  	  gl_FragColor.y = z*-1.;	  gl_FragColor.z = 1.;	
+        					}]]>		</program>	</language></jittershader>
